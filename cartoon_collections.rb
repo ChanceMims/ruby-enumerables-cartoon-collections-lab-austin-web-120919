@@ -16,7 +16,7 @@ end
 def find_the_cheese(my_snacks)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  first_cheese = my_snacks.find_index{|snack_list| snack_list.include?(cheese_types.each)}
-  #first_cheese = my_snacks.include?(cheese_types)
-return first_cheese
+  my_snacks.each do|check_snack|
+    return check_snack if cheese_types.include?(check_snack)
+   end
 end
